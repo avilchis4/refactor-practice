@@ -1,22 +1,20 @@
-
-
-
+from budgetFunction import budgetFunction 
+from calculator import add
+from weather_advice import WeatherAssistant
+from shopping_list import shopping_list
 # Create a Function: Turn this logic into a function called suggest_destination(budget) that:
 
 # Accepts budget as an argument.
 # Returns the suggestion as a string.
 
-if budget < 100:
-            return "Local day trips."
-        elif budget < 500:
-            return "Nearby cities."
-        else:
-            return "International travel!"
 
+print(budgetFunction (300))
 
+print(add(10.5))
 
+print(WeatherAssistant("sunny"))
 
-
+print(shopping_list(""))
 
 # Instructions for Students:
 
@@ -24,16 +22,9 @@ if budget < 100:
 # Make a Calculator class that contains these functions as methods.
 # Ensure that division checks for zero before attempting the operation.
 # Move the arithmetic logic into a file named calculator.py.
-a = 10
-b = 5
-print(a + b)
-print(a - b)
-print(a * b)
-if b != 0:
-    print(a / b)
-else:
-    print("Cannot divide by zero")
+
     
+
 
 ####################################################################################################
 # Instructions for Students:
@@ -41,15 +32,8 @@ else:
 # Create a function that takes weather as an argument and returns the appropriate advice.
 # Optionally, create a class WeatherAssistant with a method for weather advice.
 #Move the weather advice logic into a file named weather_advice.py.
-weather = "rainy"
-if weather == "rainy":
-    print("Take an umbrella.")
-elif weather == "sunny":
-    print("Wear sunglasses.")
-elif weather == "cold":
-    print("Wear a jacket.")
-else:
-    print("Weather unknown. Dress comfortably.")
+
+
 
 
 
@@ -62,11 +46,8 @@ else:
 # Optionally, create a ShoppingList class that manages the list with the above methods.
 #Move the shopping list logic into a file named shopping_list.py.
 
-shopping_list = ["apples", "bananas", "carrots"]
-shopping_list.append("dates")
-shopping_list.remove("bananas")
-for item in shopping_list:
-    print(item)
+
+   
 
 
 
